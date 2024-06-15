@@ -9,6 +9,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.HashMap;
 
+// The PharmacyManagementSystem class has two attributes: drugs and connection.
+
 public class PharmacyManagementSystem {
     private HashMap<String, Drug> drugs;
     private Connection connection;
