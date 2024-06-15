@@ -19,6 +19,8 @@ public class PharmacyManagementSystem {
         this.drugs = new HashMap<>();
         this.connection = DatabaseConnection.getConnection();
     }
+    
+// The PharmacyManagementSystem class has a method addDrug() that adds a new drug to the system.
 
     public void addDrug(Drug drug) {
         drugs.put(drug.getDrugCode(), drug);
