@@ -9,6 +9,8 @@ public class Purchase {
     private int quantity;
     private double totalAmount;
     private Customer customer;
+    
+// The Purchase class has five attributes: date, drugCode, quantity, totalAmount, and customer.
 
     public Purchase(Date date, String drugCode, int quantity, double totalAmount, Customer customer) {
         this.date = date;
