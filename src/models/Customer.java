@@ -1,5 +1,7 @@
 package models;
 
+// The Customer class has a constructor that initializes the attributes.
+
 public class Customer {
     private String customerId;
     private String name;
