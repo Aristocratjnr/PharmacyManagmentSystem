@@ -1,7 +1,6 @@
 package Main;
 
 import models.Drug;
-import models.Supplier;
 import Utils.DatabaseConnection;
 
 import java.sql.Connection;
