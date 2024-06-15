@@ -1,4 +1,5 @@
 package models;
+// The Purchase class has a constructor that initializes the attributes.
 
 import java.util.Date;
 
