@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import models.Drug;
 
 
-public class Main extends Application {
+public class GUI extends Application {
     PharmacyManagementSystem pms = new PharmacyManagementSystem();
 
     public static void main(String[] args) {
