@@ -6,6 +6,8 @@ public class Customer {
     private String customerId;
     private String name;
     private String contactInfo;
+    
+// The Customer class has three attributes: customerId, name, and contactInfo.
 
     public Customer(String customerId, String name, String contactInfo) {
         this.customerId = customerId;
