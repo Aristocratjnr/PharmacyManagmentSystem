@@ -1,5 +1,5 @@
 package models;
-
+// The Drug class has a constructor that initializes the attributes.
 import java.util.List;
 
 public class Drug {
