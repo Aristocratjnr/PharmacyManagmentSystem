@@ -1,5 +1,6 @@
 package models;
 
+// The Supplier class has a constructor that initializes the attributes.
 
 public class Supplier {
     private String supplierId;
