@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 //  The DatabaseConnection class provides a static method getConnection() that returns a Connection object to the database.
+// This class uses the DriverManager class to establish a connection to the MySQL database and it hasn't been setup yet.
+
 
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/pharmacy_db";
