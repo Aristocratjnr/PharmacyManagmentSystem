@@ -1,5 +1,7 @@
 package Main;
 
+//Graphical User Interface for the Pharmacy Management System
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -8,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import models.Drug;
+
 
 public class Main extends Application {
     PharmacyManagementSystem pms = new PharmacyManagementSystem();
