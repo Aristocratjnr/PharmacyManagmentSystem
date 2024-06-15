@@ -1,4 +1,5 @@
 package Main;
+// The PharmacyManagementSystem class has a constructor that initializes the attributes.
 
 import models.Drug;
 import Utils.DatabaseConnection;
