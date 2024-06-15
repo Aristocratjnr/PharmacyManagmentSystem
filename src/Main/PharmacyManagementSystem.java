@@ -2,7 +2,7 @@ package main;
 
 import models.Drug;
 import models.Supplier;
-import utils.DatabaseConnection;
+import Utils.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
