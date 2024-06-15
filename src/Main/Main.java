@@ -1,6 +1,7 @@
 package Main;
 
 import models.Drug;
+// The Main class is the entry point of the application.
 
 public class Main {
     public static void main(String[] args) {
