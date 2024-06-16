@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "--module-path",
+                "C:\\Users\\user\\Downloads\\openjfx-22.0.1_windows-x64_bin-sdk\\javafx-sdk-22.0.1\\legal\\javafx.fxml",
+                "--add-modules",
+                "javafx.controls,javafx.fxml",
+                "-d",
+                "bin",
+                "src/Main/GUI.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "--module-path",
+                "C:\\javafx-sdk-19\\lib",
+                "--add-modules",
+                "javafx.controls,javafx.fxml",
+                "-cp",
+                "bin",
+                "com.example.MyApplication"
+            ]
+        }
+    ]
+}
