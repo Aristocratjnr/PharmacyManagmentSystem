@@ -7,12 +7,14 @@
             "command": "javac",
             "args": [
                 "--module-path",
-                "C:\\Users\\user\\Downloads\\openjfx-22.0.1_windows-x64_bin-sdk\\javafx-sdk-22.0.1\\legal\\javafx.fxml",
+                "C:\\Users\\user\\Downloads\\openjfx-22.0.1_windows-x64_bin-sdk\\javafx-sdk-22.0.1\\lib",
                 "--add-modules",
                 "javafx.controls,javafx.fxml",
                 "-d",
                 "bin",
-                "src/Main/GUI.java"
+                "src/Main/*.java",
+                "src/models/*.java",
+                "src/Utils/*.java"
             ],
             "group": {
                 "kind": "build",
@@ -25,12 +27,12 @@
             "command": "java",
             "args": [
                 "--module-path",
-                "C:\\javafx-sdk-19\\lib",
+                "C:\\path\\to\\javafx-sdk-19\\lib",
                 "--add-modules",
                 "javafx.controls,javafx.fxml",
                 "-cp",
                 "bin",
-                "com.example.MyApplication"
+                "Main.GUI"
             ]
         }
     ]
