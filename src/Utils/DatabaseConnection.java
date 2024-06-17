@@ -8,6 +8,7 @@ import java.sql.SQLException;
 
 // This class uses the DriverManager class to establish a connection to the MySQL database and it hasn't been setup yet.
 
+@SuppressWarnings("ALL")
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/pharmacy_db";
     private static final String USER = "root";
