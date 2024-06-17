@@ -6,6 +6,7 @@
 .label {
     -fx-font-size: 14px;
     -fx-text-fill: #333;
+    font-size: 14px;
 }
 
 .text-field {
