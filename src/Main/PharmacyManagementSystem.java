@@ -1,19 +1,18 @@
 package Main;
 // The PharmacyManagementSystem class has a constructor that initializes the attributes.
 
-import models.Drug;
 import Utils.DatabaseConnection;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.HashMap;
+import models.Drug;
 
 // The PharmacyManagementSystem class has two attributes: drugs and connection.
 
 public class PharmacyManagementSystem {
-    private HashMap<String, Drug> drugs;
-    private Connection connection;
+    private final HashMap<String, Drug> drugs;
+    private final Connection connection;
 
     public PharmacyManagementSystem() {
         this.drugs = new HashMap<>();
