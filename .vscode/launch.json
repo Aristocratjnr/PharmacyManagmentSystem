@@ -5,10 +5,9 @@
             "type": "java",
             "name": "Debug (Launch)-Main<Main>",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
             "mainClass": "Main.Main",
-            "vmArgs": "--module-path ${workspaceFolder}/lib --add-modules javafx.controls,javafx.fxml",
-            "projectName": "PharmacyManagmentSystem"
+            "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml",
+            "projectName": "PharmacyManagementSystem"
         }
     ]
 }
