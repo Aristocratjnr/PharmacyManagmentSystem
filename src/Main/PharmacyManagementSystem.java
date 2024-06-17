@@ -32,7 +32,6 @@ public class PharmacyManagementSystem {
             pstmt.setDouble(5, drug.getPrice());
             pstmt.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
         }
     }
 
