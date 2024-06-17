@@ -33,4 +33,5 @@
     -fx-border-color: #E0E0E0;
     -fx-border-width: 2px;
     border-width: 2px;
+    border-color: #E0E0E0; /* Add the standard 'border-color' property */
 }
