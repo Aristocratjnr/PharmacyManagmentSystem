@@ -1,0 +1,30 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.text-field {
+    -fx-pref-width: 200px;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 30px;
+}
+
+.grid-pane {
+    -fx-padding: 20px;
+    -fx-hgap: 15px;
+    -fx-vgap: 15px;
+    -fx-alignment: center;
+    -fx-background-color: #F5F5F5;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 2px;
+}
