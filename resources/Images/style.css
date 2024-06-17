@@ -19,7 +19,6 @@
     background-color: #4CAF50;
     -fx-background-color: #4CAF50; /* Add the standard 'background-color' property */
     -fx-text-fill: white;
-    -fx-font-weight: bold;
     -fx-pref-width: 100px;
     -fx-pref-height: 30px;
 }
