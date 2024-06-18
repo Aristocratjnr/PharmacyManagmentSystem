@@ -3,11 +3,13 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch)-Main<Main>",
+            "name": "Launch Main",
             "request": "launch",
             "mainClass": "Main.Main",
             "vmArgs": "--module-path lib --add-modules javafx.controls,javafx.fxml",
-            "projectName": "PharmacyManagementSystem"
+            "classPaths": [
+                "src"
+            ]
         }
     ]
 }
