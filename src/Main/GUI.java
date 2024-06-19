@@ -1,7 +1,7 @@
 package Main;
 
 //Graphical User Interface for the Pharmacy Management System
-//This is the GUIa
+//This is the GUIas
 
 import javafx.application.Application;
 import javafx.scene.Scene;
