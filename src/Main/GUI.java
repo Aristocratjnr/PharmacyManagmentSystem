@@ -84,7 +84,7 @@ public class GUI extends Application {
         });
 
         // Set the Scene
-        Scene scene = new Scene(grid, 400, 300);
+        var scene = new Scene(grid, 400, 300);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
