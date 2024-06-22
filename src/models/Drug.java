@@ -130,10 +130,4 @@ public class Drug implements Serializable, Comparable<Drug> {
                 '}';
     }
 
-    // Implement the Comparable interface to allow sorting by drug code
-    @Override
-    public int compareTo(Drug other) {
-        return this.drugCode.compareTo(other.drugCode);
-    }
-}
-
+   
