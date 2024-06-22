@@ -50,7 +50,30 @@ public class Supplier implements Comparable<Supplier> {
         }
         this.location = location;
     }
+ // Override toString() method to provide a readable representation of the Supplier objects
 
+    @Override
+    public String toString() {
+        return "Supplier{" +
+                "supplierId='" + supplierId + '\'' +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
+
+    // Implement the Comparable interface to allow sorting by supplierId
+
+    @Override
+    public int compareTo(Supplier other) {
+        return this.supplierId.compareTo(other.supplierId);
+    }
+
+    // Static factory method to create a Supplier object
+
+    public static Supplier createSupplier(String supplierId, String name, String location) {
+        return new Supplier(supplierId, name, location);
+    }
+  
    
   
 }
