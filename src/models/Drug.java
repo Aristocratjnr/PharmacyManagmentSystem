@@ -14,7 +14,7 @@ public class Drug implements Serializable, Comparable<Drug> {
     private double price;
     private List<Supplier> suppliers;
     
-     // Constructor with validation
+     // A Constructor with validation
      public Drug(String drugCode, String name, String description, int stock, double price) {
         setDrugCode(drugCode);
         setName(name);
@@ -24,7 +24,7 @@ public class Drug implements Serializable, Comparable<Drug> {
         this.suppliers = new ArrayList<>();
     }
 
-    // Getters and setters with validation
+    // Getters and Setters with validation
     public String getDrugCode() {
         return drugCode;
     }
@@ -136,6 +136,4 @@ public class Drug implements Serializable, Comparable<Drug> {
         return this.drugCode.compareTo(other.drugCode);
     }
 }
-
-
 
