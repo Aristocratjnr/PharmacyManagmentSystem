@@ -129,5 +129,8 @@ public class Drug implements Serializable, Comparable<Drug> {
                 ", suppliers=" + suppliers +
                 '}';
     }
+     // Implement the Comparable Interface to allow sorting by drug code
+     @Override
+
 
    
