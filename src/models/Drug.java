@@ -117,20 +117,27 @@ public class Drug implements Serializable, Comparable<Drug> {
         this.stock -= amount;
     }
 
-    // Override toString() method
-    @Override
-    public String toString() {
-        return "Drug{" +
-                "drugCode='" + drugCode + '\'' +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", stock=" + stock +
-                ", price=" + price +
-                ", suppliers=" + suppliers +
-                '}';
-    }
+        // Override toString() method
+        @Override
+        public String toString() {
+            return "Drug{" +
+                    "drugCode='" + drugCode + '\'' +
+                    ", name='" + name + '\'' +
+                    ", description='" + description + '\'' +
+                    ", stock=" + stock +
+                    ", price=" + price +
+                    ", suppliers=" + suppliers +
+                    '}';
+        }
+
      // Implement the Comparable Interface to allow sorting by drug code
      @Override
+     public int compareTo(Drug other) {
+        return this.drugCode.compareTo(other.drugCode);
+     }
+ }
+
+
 
 
    
