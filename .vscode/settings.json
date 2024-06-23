@@ -1,9 +1,4 @@
 {
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-    ],
-    "java.project.sourcePaths": [
-        "src"
-    ],
-    "jdk.runConfig.vmOptions": "--enable-preview --source 22"
+  "java.project.referencedLibraries": ["lib/**/*.jar"],
+  "java.project.sourcePaths": ["src"]
 }
