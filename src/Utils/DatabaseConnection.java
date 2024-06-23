@@ -11,6 +11,9 @@ import java.sql.SQLException;
 @SuppressWarnings("ALL")
 public class DatabaseConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/pharmacy_db";
+    private static final String USER = "root";
+    private static final String PASSWORD = "aristocrat";
+    
     private static final String USER = "Danny";
     private static final String PASSWORD = "Danny755";
 
