@@ -1,8 +1,10 @@
 package Main;
 
 //Graphical User Interface for the Pharmacy Management System
-//This is the GUI
+//This is the GUIas
 
+import java.awt.Button;
+import java.awt.TextField;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -82,7 +84,7 @@ public class GUI extends Application {
         });
 
         // Set the Scene
-        Scene scene = new Scene(grid, 400, 300);
+        var scene = new Scene(grid, 400, 300);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
