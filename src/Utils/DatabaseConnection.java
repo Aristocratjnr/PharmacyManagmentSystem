@@ -1,25 +1,56 @@
+//Daniella Commits
 package Utils;
-// We will need to provide the correct URL, username, and password to connect to the database.
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-//  The DatabaseConnection class provides a static method getConnection() that returns a Connection object to the database.
+import java.util.Properties;
+import java.io.InputStream;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.apache.commons.dbcp2.BasicDataSource;
 
-// This class uses the DriverManager class to establish a connection to the MySQL database and it hasn't been setup yet.
-
-@SuppressWarnings("ALL")
 public class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/pharmacy_db";
-    private static final String USER = "Danny";
-    private static final String PASSWORD = "Danny755";
+    private static final Logger LOGGER = Logger.getLogger(DatabaseConnection.class.getName());
+    private static BasicDataSource dataSource;
+    
+    // Load database configuration from a properties file
+    static {
+        try (InputStream input = DatabaseConnection.class.getClassLoader().getResourceAsStream("db.properties")) {
+            Properties properties = new Properties();
+            if (input == null) {
+                LOGGER.log(Level.SEVERE, "Sorry, unable to find db.properties");
+                return;
+            }
+            properties.load(input);
+            String url = properties.getProperty("db.url");
+            String user = properties.getProperty("db.user");
+            String password = properties.getProperty("db.password");
+            
+            // Initialize the connection pool
+            dataSource = new BasicDataSource();
+            dataSource.setUrl(url);
+            dataSource.setUsername(user);
+            dataSource.setPassword(password);
+            dataSource.setMinIdle(5);
+            dataSource.setMaxIdle(10);
+            dataSource.setMaxOpenPreparedStatements(100);
+        } catch (IOException ex) {
+            LOGGER.log(Level.SEVERE, "Error loading database configuration", ex);
+        }
+    }
 
+    // Private constructor to prevent instantiation
+    private DatabaseConnection() {}
+
+    // Get a connection from the connection pool
     public static Connection getConnection() {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection(URL, USER, PASSWORD);
+            connection = dataSource.getConnection();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOGGER.log(Level.SEVERE, "Error getting database connection", e);
         }
         return connection;
     }
