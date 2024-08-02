@@ -8,7 +8,6 @@ public class Drug {
     private String description;
     private int stock;
     private double price;
-    private List<Supplier> suppliers;
     
     // The Drug class has five attributes: drugCode, name, description, stock, and price.
 
