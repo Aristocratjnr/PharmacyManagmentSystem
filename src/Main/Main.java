@@ -1,5 +1,5 @@
 package Main;
-
+// This is main
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import models.Drug;
+
 
 public class Main extends Application {
     PharmacyManagementSystem pms = new PharmacyManagementSystem();
@@ -22,52 +23,38 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Pharmacy Management System");
 
-        // Create the GridPane
         GridPane grid = new GridPane();
         grid.setHgap(15);
         grid.setVgap(15);
         grid.setPadding(new Insets(20));
         grid.setAlignment(Pos.CENTER);
-        grid.getStyleClass().add("grid-pane");
 
-        // Add Drug Code input
         Label drugCodeLabel = new Label("Drug Code:");
         grid.add(drugCodeLabel, 0, 0);
         TextField drugCodeField = new TextField();
-        drugCodeField.getStyleClass().add("text-field");
         grid.add(drugCodeField, 1, 0);
 
-        // Add Drug Name input
         Label drugNameLabel = new Label("Drug Name:");
         grid.add(drugNameLabel, 0, 1);
         TextField drugNameField = new TextField();
-        drugNameField.getStyleClass().add("text-field");
         grid.add(drugNameField, 1, 1);
 
-        // Add Drug Description input
         Label drugDescLabel = new Label("Description:");
         grid.add(drugDescLabel, 0, 2);
         TextField drugDescField = new TextField();
-        drugDescField.getStyleClass().add("text-field");
         grid.add(drugDescField, 1, 2);
 
-        // Add Drug Stock input
         Label drugStockLabel = new Label("Stock:");
         grid.add(drugStockLabel, 0, 3);
         TextField drugStockField = new TextField();
-        drugStockField.getStyleClass().add("text-field");
         grid.add(drugStockField, 1, 3);
 
-        // Add Drug Price input
         Label drugPriceLabel = new Label("Price:");
         grid.add(drugPriceLabel, 0, 4);
         TextField drugPriceField = new TextField();
-        drugPriceField.getStyleClass().add("text-field");
         grid.add(drugPriceField, 1, 4);
 
-        // Add Button
         Button addButton = new Button("Add Drug");
-        addButton.getStyleClass().add("button");
         grid.add(addButton, 1, 5);
 
         addButton.setOnAction(event -> {
@@ -80,7 +67,6 @@ public class Main extends Application {
             Drug drug = new Drug(drugCode, drugName, drugDescription, drugStock, drugPrice);
             pms.addDrug(drug);
 
-            // Clear fields after adding
             drugCodeField.clear();
             drugNameField.clear();
             drugDescField.clear();
@@ -88,9 +74,7 @@ public class Main extends Application {
             drugPriceField.clear();
         });
 
-        // Set the Scene
         Scene scene = new Scene(grid, 400, 300);
-        scene.getStylesheets().add("file:resources/styles.css");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
