@@ -13,7 +13,6 @@ public class Drug implements Serializable, Comparable<Drug> {
     private String description;
     private int stock;
     private double price;
-    private List<Supplier> suppliers;
     
      // A Constructor with validation
      public Drug(String drugCode, String name, String description, int stock, double price) {
