@@ -15,4 +15,4 @@ Java Development Kit (JDK) 8 or higher<br>
 MySQL Database<br>
 JavaFX SDK
 
-Anyways, you guys can use Vscode, it is not necessarily for you guys to use IntelliJ IDE.
+Built on Visual Studio Code. 
